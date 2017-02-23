@@ -13,8 +13,14 @@
     tools:context="com.pranavburugula.getitdone.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <include layout="@layout/current_task"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/tasks_list"
+        android:divider="#9E9E9E"
+        android:dividerHeight="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="370dp" />
 </RelativeLayout>
