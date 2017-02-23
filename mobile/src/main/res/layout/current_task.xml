@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="200dp">
+    android:layout_width="match_parent" android:layout_height="200dp"
+    android:background="@color/currentTask">
 
     <Chronometer
         android:layout_width="170dp"
@@ -10,7 +11,8 @@
         android:layout_alignParentStart="true"
         android:textSize="36sp"
         android:padding="10dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"
@@ -29,7 +31,8 @@
         android:id="@+id/current_task_header"
         android:textSize="30sp"
         android:padding="10dp"
-        android:layout_width="250dp" />
+        android:layout_width="250dp"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 
     <TextView
         android:text="TextView"
@@ -41,7 +44,8 @@
         android:layout_alignParentBottom="true"
         android:padding="10dp"
         android:textSize="18sp"
-        android:layout_alignEnd="@+id/current_task_header" />
+        android:layout_alignEnd="@+id/current_task_header"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 
     <TextClock
         android:id="@+id/clock"
@@ -54,7 +58,8 @@
         android:layout_centerHorizontal="false"
         android:layout_centerVertical="false"
         android:layout_centerInParent="false"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 
     <TextView
         android:text="TextView"
@@ -67,5 +72,6 @@
         android:layout_alignParentBottom="true"
         android:textSize="36sp"
         android:textAlignment="center"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 </RelativeLayout>
